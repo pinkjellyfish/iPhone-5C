@@ -1,0 +1,33 @@
+/* reset */
+html,body,div{margin:0;padding:0;}
+body {color:#333;font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial, Verdana,sans-serif;}
+body{overflow:hidden;}
+h1{font-size:5rem;font-family:arial,helvetica;margin:0;padding:0;}
+h2{font-size:2rem;margin:0 0 18px 0;font-family:arial,helvetica;}
+img {-webkit-transition:all 0.7s ease-out;-moz-transition:all 0.7s ease-out;-o-transition:all 0.7s ease-out;transition:all 0.7s ease-out;}
+
+/* function */
+.line{border:1px solid red;}
+.f-dn{display:none;}
+.f-pa{position:absolute;}
+.section{text-align:center;overflow:hidden;}
+.text{text-align:left;color:#808080;font-size:1.2rem;line-height:1.6rem;}
+.wrap{width:1180px;height:100%;margin:0 auto;position:relative;}
+
+/* settings */
+/* page0 */
+.iphone1{height:100%;}
+
+/* page1 */
+.change-phone{top:50%;transform:translateY(-50%);}
+.word1{top:30%;padding-left:75%;}
+
+/* page2 */
+.color-phone{left:-25%;top:50%;transform:translateY(-50%);}
+.word2{top:30%;padding-left:50%;}
+.iphone-red{padding-bottom:10rem;}
+
+/* page3 */
+.iphone-three{width:100%;top:50%;transform:translateY(-30%);}
+.word3{top:10%;}
+

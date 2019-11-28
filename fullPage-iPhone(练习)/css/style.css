@@ -2,17 +2,56 @@
 html,body,div{margin:0;padding:0;}
 body {color:#333;font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial, Verdana,sans-serif;}
 body{overflow:hidden;}
+img{display:inline-block;}
 h1{font-size:5rem;font-family:arial,helvetica;margin:0;padding:0;}
 h2{font-size:2rem;margin:0 0 18px 0;font-family:arial,helvetica;}
-img {-webkit-transition:all 0.7s ease-out;-moz-transition:all 0.7s ease-out;-o-transition:all 0.7s ease-out;transition:all 0.7s ease-out;}
 
 /* function */
-.line{border:1px solid red;}
+.subline{border:1px solid blue;}
 .f-dn{display:none;}
 .f-pa{position:absolute;}
 .section{text-align:center;overflow:hidden;}
 .text{text-align:left;color:#808080;font-size:1.2rem;line-height:1.6rem;}
 .wrap{width:1180px;height:100%;margin:0 auto;position:relative;}
+
+/* animation */
+@keyframes myFirst
+{
+    0%   {transform:translate3d(50%,0,0);opacity:0;}
+    100% {transform:translate3d(0,0,0);opacity:1;}
+}
+@keyframes mySecond
+{
+    0%   {transform:translate3d(-350%,0,0);opacity:0;}
+    100% {transform:translate3d(0,0,0);opacity:1;}
+}
+@keyframes myThird
+{
+    0%   {transform:translate3d(0,100%,0);opacity:0;}
+    100% {transform:translate3d(0,-50%,0);opacity:1;}
+}
+@keyframes myFourth
+{
+    0%   {transform:translate3d(0,0,0);}
+    100% {transform:translate3d(0,-90%,0);}
+}
+@keyframes myFifth
+{
+    0%   {transform:translate3d(0,-90%,0);}
+    100% {transform:translate3d(0,0,0);}
+}
+@media screen and (max-height:900px) {
+    @keyframes myFourth
+    {
+        0%   {transform:translate3d(0,0,0);}
+        100% {transform:translate3d(0,-30%,0);}
+    }
+    @keyframes myFifth
+    {
+        0%   {transform:translate3d(0,-30%,0);}
+        100% {transform:translate3d(0,0,0);}
+    }
+}
 
 /* settings */
 /* page0 */
@@ -20,14 +59,28 @@ img {-webkit-transition:all 0.7s ease-out;-moz-transition:all 0.7s ease-out;-o-t
 
 /* page1 */
 .change-phone{top:50%;transform:translateY(-50%);}
+.iphone2{z-index:9;opacity:0;}
+.iphone3{z-index:10;}
+.iphone4{z-index:8;opacity:0;}
+.act1{animation:myFirst 0.7s forwards;}
+.act2{animation:mySecond 0.7s forwards;}
 .word1{top:30%;padding-left:75%;}
 
 /* page2 */
-.color-phone{left:-25%;top:50%;transform:translateY(-50%);}
+.color-phone{left:-23.5%;top:50%;transform:translate3d(0,-50%,0);}
+.act3{animation:myThird 0.7s forwards;}
 .word2{top:30%;padding-left:50%;}
 .iphone-red{padding-bottom:10rem;}
 
 /* page3 */
 .iphone-three{width:100%;top:50%;transform:translateY(-30%);}
+.act4{animation:myFourth 0.8s forwards;}
+.act5{animation:myFifth 0.7s forwards;}
 .word3{top:10%;}
+
+/* 导航栏样式修改 */
+#fp-nav ul li a.active span,    
+.fp-slidesNav ul li a.active span{background:#AAAAAA;}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{border:1px solid #FFF;}
 

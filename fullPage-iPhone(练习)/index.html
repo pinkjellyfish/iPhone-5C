@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>fullPage.js-iPhone 5C演示（demo）</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>fullPage.js-iPhone 5C演示（demo）</title>
 <link rel="stylesheet" href="css/jquery.fullPage.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery.min.js"></script>
@@ -12,9 +12,8 @@
 <script src="js/jquery.fullPage.js"></script>
 </head>
 <body>
-<div id="superContainer" class="easing">
-
-    <div id="section0" class="section line" data-anchor="page0">
+<div id="superContainer">
+    <div id="section0" class="section active" data-anchor="page0">
         <h1>fullPage.js——iPhone 5C 演示</h1>
         <img class="iphone1" src="images/iphone1.jpg" alt="">
     </div>
@@ -22,9 +21,9 @@
     <div id="section1" class="section" data-anchor="page1">
         <div class="wrap">
             <div class="change-phone f-pa">
-                <img src="images/iphone2.png" alt="">
-                <img src="images/iphone3.png" alt="">
-                <img src="images/iphone4.png" alt="">
+                <img id="iphone2" class="iphone2" src="images/iphone2.png" alt="">
+                <img id="iphone3" class="iphone3" src="images/iphone3.png" alt="">
+                <img id="iphone4" class="iphone4" src="images/iphone4.png" alt="">
             </div>
             <div class="word1 text f-pa">
                 <h2>A powerful plugin</h2>
@@ -38,7 +37,7 @@
 
     <div id="section2" class="section" data-anchor="page2">
         <div class="wrap">
-            <div class="color-phone f-pa">
+            <div id="color-phone" class="color-phone f-pa">
                 <img class="iphone-yellow" src="images/iphone-yellow.png" alt="">
                 <img class="iphone-red" src="images/iphone-red.png" alt="">
                 <img class="iphone-blue" src="images/iphone-blue.png" alt="">
@@ -52,7 +51,7 @@
         </div>
     </div>
 
-    <div id="section3" class="section" data-anchor="page3">
+    <div id="section3" class="section" data-anchor="page3" style="overflow:visible;">
         <div class="wrap">
             <div class="word3 text f-pa" style="text-align:center;">
                 <h2>Just a demo</h2>
@@ -62,13 +61,12 @@
                 It has been designed to work on 1180px width or over on modern browers with CSS3.
             </div>
             <div class="iphone-three f-pa">
-                <img class="iphone-green" src="images/iphone-green.png" alt="">
+                <img id="iphone-green" class="iphone-green" src="images/iphone-green.png" alt="">
                 <img class="iphone-two" src="images/iphone-two.png" alt="">
             </div>
         </div>
     </div>
 </div>
-
 <script src="js/index.js"></script>
 </body>
 </html>
